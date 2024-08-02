@@ -16,13 +16,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <Image src="/logo.png" width={160} height={55} alt="Logo" />
-          <div>
+          <div >
             {/* Nav Section */}
-            <Navbar />
+            <Navbar containerStyles="hidden xl:flex gap-x-8 items-center" />
             {/* Theme Toggler */}
             <ThemeToggle />
             {/* Mobile Navigation */}
-            <div className="xl:hidden xl:flex gap-x-8 items-center">
+            <div className="xl:hidden">
               <Mobilenavigation />
             </div>
           </div>
